@@ -7,10 +7,10 @@ class HelloWorld {
             for(int testcase = 0; testcase < testCases; testcase++) {
                
                String Information[] =  input.nextLine().split(":");
-               double Speed = Math.max(0, Math.min(200, Double.parseDouble(Information[0])));
-               double Distance = Math.max(1, Math.min(400,Double.parseDouble(Information[1])));
+               double V = Math.max(0, Math.min(200, Double.parseDouble(Information[0])));
+               double X = Math.max(1, Math.min(400,Double.parseDouble(Information[1])));
                
-               double Seconds = Distance/Speed;
+               double Seconds = X/V;
                if (Seconds <= 1){
                    System.out.println("SWERVE");
                } else if (Seconds <= 5){
