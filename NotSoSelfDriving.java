@@ -11,6 +11,9 @@ class HelloWorld {
                double X = Math.max(1, Math.min(400,Double.parseDouble(Information[1])));
                
                double Seconds = X/V;
+               if (V != 0 && X != 0) {
+                   Seconds = (Math.round(X*100)/100)/(Math.round(V*100)/100);
+               };
                if (Seconds <= 1){
                    System.out.println("SWERVE");
                } else if (Seconds <= 5){
