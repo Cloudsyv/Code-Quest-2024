@@ -7,8 +7,8 @@ class HelloWorld {
             for(int testcase = 0; testcase < testCases; testcase++) {
                
                String Information[] =  input.nextLine().split(":");
-               double Speed = Double.parseDouble(Information[0]);
-               double Distance = Double.parseDouble(Information[1]);
+               double Speed = Math.max(0, Math.min(200, Double.parseDouble(Information[0])));
+               double Distance = Math.max(1, Math.min(400,Double.parseDouble(Information[1])));
                
                double Seconds = Distance/Speed;
                if (Seconds <= 1){
