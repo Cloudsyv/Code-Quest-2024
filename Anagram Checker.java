@@ -17,7 +17,6 @@ class CodeQuest {
                     for (int v = 0; v < Word2.length(); v++){
                         if (Word2.substring(v, v+1).equals(Word1.substring(i, i+1)) && Stop == false){
                             Count++;
-                            System.out.println(Word2.substring(v, v+1));
                             Stop = true;
                         }
                     }
