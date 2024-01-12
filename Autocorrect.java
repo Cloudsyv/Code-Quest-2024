@@ -13,26 +13,30 @@ class CodeQuest {
                     DictionaryWords[i] = input.nextLine();
                 }
                 
+                String Words[] = new String[W];
                 for (int i = 0; i < W; i++){
                     String Word = input.nextLine();
-                    
+                    Words[i] = Word;
+                } 
+                
+                for (int i = 0; i < Words.length; i++){
+                    String Word = Words[i];
                     int MatchList[] = new int[D];
-                    //int Matches = 0;
                     
-                    // Loop through dictionary words
+                     // Loop through dictionary words
                     for (int y = 0; y < DictionaryWords.length; y++){
                         // Loop through characters in dicitonary word
                         for (int v = 0; v < DictionaryWords[y].length(); v++){
                             // Loop through characters in word
-                            /*for (int x = 0; x < Word.length(); x++){
-                                if (DicitonaryWords[y].charAt(v) == (Word[x].charAt(x))){
+                            for (int x = 0; x < Word.length(); x++){
+                                if (DictionaryWords[y].charAt(v) == Word.charAt(x) && DictionaryWords[y].length() == Word.length()){
                                     MatchList[y]++;
                                 }
-                            }*/
+                            }
                         }
                     }
                     
-                    String MatchedWord;
+                    String MatchedWord = "";
                     int Matches = 0;
                     for (int y = 0; y < MatchList.length; y++){
                         if (MatchList[y] > Matches){
@@ -41,7 +45,6 @@ class CodeQuest {
                         }
                     }
                     System.out.println(MatchedWord);
-                    
                 }
             }
         }
