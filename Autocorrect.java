@@ -19,6 +19,7 @@ class CodeQuest {
                     Words[i] = Word;
                 } 
                 
+                // Loop through word list
                 for (int i = 0; i < Words.length; i++){
                     String Word = Words[i];
                     int MatchList[] = new int[D];
@@ -39,7 +40,7 @@ class CodeQuest {
                     String MatchedWord = "";
                     int Matches = 0;
                     for (int y = 0; y < MatchList.length; y++){
-                        if (MatchList[y] > Matches){
+                        if (MatchList[y] > Matches || Matches == 0){
                             Matches = MatchList[y];
                             MatchedWord = DictionaryWords[y];
                         }
