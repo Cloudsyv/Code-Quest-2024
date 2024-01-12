@@ -40,7 +40,7 @@ class CodeQuest {
                     String MatchedWord = "";
                     int Matches = 0;
                     for (int y = 0; y < MatchList.length; y++){
-                        if (MatchList[y] > Matches || Matches == 0){
+                        if (MatchList[y] >= Matches){
                             Matches = MatchList[y];
                             MatchedWord = DictionaryWords[y];
                         }
