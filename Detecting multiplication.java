@@ -14,7 +14,7 @@ class CodeQuest {
                         Count.add(i);
                     }
                 }
-                if (Count.size() >= 1){
+                if (Count.size() > 1){
                     System.out.print(Count.size()+" multipaction events were detected at time indices: ");
                     for (int i = 0; i < Count.size(); i++){
                         System.out.print(Count.get(i));
