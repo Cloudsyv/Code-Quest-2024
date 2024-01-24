@@ -24,7 +24,7 @@ class CodeQuest {
                 } else if (ColorToMake.equals("green")){
                     System.out.println("In order to make "+FullColor+", blue and yellow must be mixed.");
                 } else {
-                    System.out.println("No colors need to be mixed to make "+ColorToMake+".");
+                    System.out.println("No colors need to be mixed to make "+FullColor+".");
                 }
             }
         }
