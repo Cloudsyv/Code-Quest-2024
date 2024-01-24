@@ -10,6 +10,9 @@ class CodeQuest {
                 for (int i = 1; i <= Num; i++){
                     FactorialNum *= i;
                 }
+                if (Num <= 0){
+                    FactorialNum = Num;
+                }
                 System.out.println(FactorialNum);
             }
         }
