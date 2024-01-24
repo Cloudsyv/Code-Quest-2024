@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class CodeQuest {
-    static int factorial(int n) {
+    static long factorial(int n) {
         if (n == 0 || n == 1) {
             return 1;
         } else {
@@ -14,6 +14,7 @@ class CodeQuest {
             int testCases = Integer.parseInt(input.nextLine());
             for(int testcase = 0; testcase < testCases; testcase++) {
                 int Num = input.nextInt();
+                long Result = factorial(Num);
                 System.out.println(factorial(Num));
             }
         }
