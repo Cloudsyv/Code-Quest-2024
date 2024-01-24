@@ -13,7 +13,6 @@ class CodeQuest {
                    Result = LastPrior[0]+LastPrior[1];
                    LastPrior[0] = LastPrior[1];
                    LastPrior[1] = Result;
-                   System.out.println(Result);
                } 
                System.out.println(GoalNum+" = "+Result);
             }
