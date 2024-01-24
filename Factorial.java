@@ -15,7 +15,7 @@ class CodeQuest {
             for(int testcase = 0; testcase < testCases; testcase++) {
                 int Num = input.nextInt();
                 long Result = factorial(Num);
-                System.out.println(factorial(Num));
+                System.out.println(Result);
             }
         }
     }
