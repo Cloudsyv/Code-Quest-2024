@@ -11,7 +11,7 @@ class CodeQuest {
                     FactorialNum *= i;
                 }
                 if (Num <= 0){
-                    FactorialNum = Num;
+                    FactorialNum = 1;
                 }
                 System.out.println(FactorialNum);
             }
