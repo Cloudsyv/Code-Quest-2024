@@ -9,11 +9,11 @@ class CodeQuest {
                 String ColorToMake;
                 String FullColor;
                 if (DesiredColor.length == 1){
-                    ColorToMake = DesiredColor[0];
-                    FullColor = DesiredColor[0];
+                    ColorToMake = DesiredColor[0].toLowerCase();
+                    FullColor = DesiredColor[0].toLowerCase();
                 } else {
-                    ColorToMake = DesiredColor[1]; 
-                    FullColor = DesiredColor[0]+"-"+DesiredColor[1];
+                    ColorToMake = DesiredColor[1].toLowerCase(); 
+                    FullColor = DesiredColor[0].toLowerCase()+"-"+DesiredColor[1].toLowerCase();
                 }
                 
                 System.out.println(ColorToMake);
