@@ -13,9 +13,11 @@ class CodeQuest {
                     } else {
                         Information[i] = ""+(Integer.parseInt(Information[i])+1); 
                     }
-                    System.out.print(Information[i]+" ");
+                    System.out.print(Information[i]);
                     if (i == Information.length-1){
                         System.out.println("");
+                    } else {
+                        System.out.print(" ");
                     }
                 }
             }    
