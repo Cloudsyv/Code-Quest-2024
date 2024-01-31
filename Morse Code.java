@@ -18,7 +18,10 @@ class CodeQuest {
                   if (Dict.get(Message[i]) == null){
                     System.out.print("    ");
                   } else {
-                    System.out.print(Dict.get(Message[i])+"   "); 
+                    System.out.print(Dict.get(Message[i]));
+                    if (i != Message.length-1){
+                      System.out.print("   ");
+                    }
                   }
                 }
                 
@@ -34,6 +37,7 @@ class CodeQuest {
                       System.out.print(" "+v);
                     }
                   }
+                  
                 }
             }
         }
