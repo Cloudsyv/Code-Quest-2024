@@ -27,11 +27,6 @@ class CodeQuest {
                 // Decode
                 String EncodedMessage[] = input.nextLine().split("   ");
                 for (int i = 0; i < EncodedMessage.length; i++){
-                  //System.out.println(EncodedMessage[i]);
-                  // Get keys in dictionary
-                  //System.out.println(EncodedMessage[i]);
-                  //System.out.println(EncodedMessage[i].substring(1, EncodedMessage[i].length()));
-                  
                   for (String v: Dict.keySet()){
                     if (Dict.get(v).equals(EncodedMessage[i])){
                       System.out.print(v);
@@ -39,7 +34,6 @@ class CodeQuest {
                       System.out.print(" "+v);
                     }
                   }
-                  
                 }
             }
         }
