@@ -16,6 +16,9 @@ class CodeQuest {
                 for (int i = 0; i < message.length; i++){
                     if (message[i].equals(" ")) {
                         System.out.print("       "); // 7 spaces for word separation
+                        while (i + 1 < message.length && message[i + 1].equals(" ")) {
+                            i++; // Skip extra spaces
+                        }
                     } else if (dict.containsKey(message[i])){
                         System.out.print(dict.get(message[i]));
                         if (i < message.length - 1 && !message[i + 1].equals(" ")) {
@@ -29,7 +32,7 @@ class CodeQuest {
                 String encodedMessage = input.nextLine();
                 String[] encodedWords = encodedMessage.split("       "); // Split by 7 spaces
                 for (String word : encodedWords) {
-                    String[] encodedChars = word.split("   "); // Split by 3 spaces
+                    String[] encodedChars = word.trim().split("   "); // Split by 3 spaces
                     for (String encodedChar : encodedChars) {
                         for (String key : dict.keySet()) {
                             if (dict.get(key).equals(encodedChar)) {
