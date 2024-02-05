@@ -18,7 +18,7 @@ class CodeQuest {
             System.out.print(Number);
         }
         
-        if (Unit != "s"){
+        if (!Unit.equals("s")){
             System.out.print(":");
         }
     }
