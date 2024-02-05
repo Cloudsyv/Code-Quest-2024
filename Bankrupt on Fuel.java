@@ -30,7 +30,11 @@ class CodeQuest {
                     if (TotalFuel/NumTanks <= Integer.parseInt(Tanks[i])){
                         FillList[i] = (double) RemainingFuel/RemainingTanks;
                         if (FillList[i]/(RemainingFuel/RemainingTanks) != 1){
-                            System.out.print(RemainingFuel+"/"+RemainingTanks);
+                            if (RemainingTanks%2 == 0){
+                                System.out.print((RemainingFuel/(RemainingTanks/2))+"/2");
+                            } else {
+                                System.out.print(RemainingFuel+"/"+RemainingTanks);   
+                            }
                         } else {
                             System.out.print((int) FillList[i]);
                         }
