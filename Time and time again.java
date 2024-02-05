@@ -36,7 +36,7 @@ class CodeQuest {
                 for (int i = 0; i < TimeArray.length; i++){
                     String TimeText = TimeArray[i];
                     
-                    if (!TimeText.equals("and")){
+                    if (TimeText.length() > 1 !TimeText.equals("and")){
                         String Unit = TimeText.substring(TimeText.length()-1, TimeText.length());
                         int Time = Integer.parseInt((TimeText.substring(0, TimeText.length()-1)));
                         
