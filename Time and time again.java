@@ -2,13 +2,6 @@ import java.util.Scanner;
 
 class CodeQuest {
     public static void Converter(int Number, String Unit){
-        // Limits
-        if (Unit.equals("h")){
-            Number = Math.max(0, Math.min(99, Number));
-        } else {
-            Number = Math.max(0, Math.min(59, Number));
-        }
-        
         // Format
         if (Number == 0){
             System.out.print("00");
@@ -20,6 +13,8 @@ class CodeQuest {
         
         if (!Unit.equals("s")){
             System.out.print(":");
+        } else {
+            System.out.print("\n");
         }
     }
     
@@ -44,7 +39,7 @@ class CodeQuest {
                             Hours = Time;
                         } else if (Unit.equals("m")){
                             Minutes = Time;
-                        } else {
+                        } else if (Unit.equals("s")){
                             Seconds = Time;
                         }
                     }
@@ -54,7 +49,6 @@ class CodeQuest {
                 Converter(Hours, "h");
                 Converter(Minutes, "m");
                 Converter(Seconds, "s");
-                System.out.println();
             }
         }
     }
