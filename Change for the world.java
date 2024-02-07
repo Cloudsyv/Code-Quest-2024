@@ -29,7 +29,7 @@ class CodeQuest {
                 }
                 System.out.println("Quarters="+Q);
                 System.out.println("Dimes="+D);
-                System.out.println("Nickles="+N);
+                System.out.println("Nickels="+N);
                 System.out.println("Pennies="+P);
             }
         }
